@@ -1,16 +1,14 @@
 //SignInScreen
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'functoimplementsignin.dart';
 
 
 class SignInScreen extends StatefulWidget {
-SignInScreen({Key? key}) : super(key: key);
+const SignInScreen({Key? key}) : super(key: key);
 
 @override
+// ignore: library_private_types_in_public_api
 _SignInScreenState createState() => _SignInScreenState();
 }
 
@@ -68,8 +66,8 @@ Widget build(BuildContext context) {
 				),
 				
 				// by onpressed we call the function signup function
-				onPressed: ()
-					signup(context);
+				onPressed: (
+					signup(context);)
 				},
 				),
 			)
