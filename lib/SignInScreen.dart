@@ -68,13 +68,12 @@ Widget build(BuildContext context) {
 				// by onpressed we call the function signup function
 				onPressed: (
 					signup(context);)
-				},
-				),
-			)
-			],
-		),
-		),
-	),
-	);
+        ),
+      ),
+      ],
+    ),
+				),),); 
+        }
+
 }
-}
+
