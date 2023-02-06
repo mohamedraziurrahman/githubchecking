@@ -15,7 +15,7 @@ runApp(GoogleSignIn());
 }
 
 class GoogleSignIn extends StatefulWidget {
-GoogleSignIn({Key? key}) : super(key: key);
+GoogleSignIn({Key key}) : super(key: key);
 @override
 _GoogleSignInState createState() => _GoogleSignInState();
 }

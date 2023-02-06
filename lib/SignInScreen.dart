@@ -7,7 +7,7 @@ import 'functoimplementsignin.dart';
 
 
 class SignInScreen extends StatefulWidget {
-const SignInScreen({Key? key}) : super(key: key);
+const SignInScreen({Key key}) : super(key: key);
 
 @override
 // ignore: library_private_types_in_public_api
