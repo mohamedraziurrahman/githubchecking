@@ -20,10 +20,12 @@ Future<void> signup(BuildContext context) async {
 	// Getting users credential
 	UserCredential result = await auth.signInWithCredential(authCredential);
 	User? user = result.user;
-	
+	print(user);
 	if (result != null) {
-		Navigator.pushReplacement(
-			context, MaterialPageRoute(builder: (context) => HomePage()));
+  // ignore: use_build_context_synchronously
+  print("result not equal to null");
+		// Navigator.pushReplacement(
+		// 	context, MaterialPageRoute(builder: (context) => GoogleSignIn()));
 	} // if result not null we simply call the MaterialpageRoute,
 		// for go to the HomePage screen
 	}

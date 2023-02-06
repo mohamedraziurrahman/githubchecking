@@ -1,4 +1,6 @@
+// ignore: file_names
 //SignInScreen
+
 
 import 'package:flutter/material.dart';
 import 'functoimplementsignin.dart';
@@ -53,7 +55,8 @@ Widget build(BuildContext context) {
 						decoration: BoxDecoration(
 						image: DecorationImage(
 							image:
-								AssetImage('assets/images/googleimage.png'),
+								// AssetImage('assets/images/googleimage.png'),
+                const NetworkImage("https://1000logos.net/wp-content/uploads/2021/05/Google-logo-768x432.png"),
 							fit: BoxFit.cover),
 						shape: BoxShape.circle,
 						),
@@ -66,8 +69,11 @@ Widget build(BuildContext context) {
 				),
 				
 				// by onpressed we call the function signup function
-				onPressed: (
-					signup(context);)
+				// onPressed: (
+				// 	signup(context);)
+        onPressed: (() {
+          signup(context);
+        }),
         ),
       ),
       ],

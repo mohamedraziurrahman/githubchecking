@@ -92,3 +92,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+firebase_auth: ^0.16.0
+google_sign_in: ^4.4.4
+assets:
+  - assets/
