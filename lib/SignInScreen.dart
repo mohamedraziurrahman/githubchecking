@@ -2,6 +2,8 @@
 //SignInScreen
 
 
+// ignore_for_file: file_names, duplicate_ignore, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'functoimplementsignin.dart';
 
@@ -25,6 +27,7 @@ Widget build(BuildContext context) {
 		height: double.infinity,
 		decoration: BoxDecoration(
 		gradient: LinearGradient(
+   // ignore: prefer_const_literals_to_create_immutables
 			colors: [
 			Colors.blue,
 			Colors.red,
@@ -46,6 +49,7 @@ Widget build(BuildContext context) {
 				child: MaterialButton(
 				color: Colors.teal[100],
 				elevation: 10,
+    // ignore: sort_child_properties_last
 				child: Row(
 					mainAxisAlignment: MainAxisAlignment.start,
 					children: [
